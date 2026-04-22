@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: box-ingame_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: 422b9fa9ab438974b8bb7a388d39eb2d, type: 2}
+  - {fileID: 11400000, guid: 80d70fdf4448605488d662afc9688b6d, type: 2}
   scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: c3fc4e78179ce4b419643462384f98f2, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: fca4e5e7f523fe444afcd33ea79ba3fa, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
     requiresBlendModeMaterials: 1

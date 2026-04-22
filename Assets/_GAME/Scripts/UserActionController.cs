@@ -1,4 +1,5 @@
 using _GAME.Scripts;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,13 +30,36 @@ public class UserActionController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             HandlePickItem();
+            if (_curItemSelected == null) 
+            {
+                CheckSpawnItem();
+            }
         }
 
-        if (_curObjSelected != null)
+        if (_curItemSelected != null)
         {
             HandleMoveItem();
         }
         
+    }
+
+    private void CheckSpawnItem()
+    {
+        var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        var rayCastPos = new Vector3(mousePos.x, mousePos.y, 0);
+        var rayCastHits = Physics2D.RaycastAll(rayCastPos, Vector2.zero, Mathf.Infinity);
+        foreach (var hit in rayCastHits) 
+        { 
+         if (hit.collider != null && hit.collider.tag.Equals("Box"))
+            {
+                if (!GameplayController.Instance.curLevel.SpawnItem())
+                {
+                    GameplayController.Instance.boxAnim.gameObject.SetActive(false);
+                }
+                break;
+            }
+        
+        }
     }
 
     private void HandlePickItem()

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: thubong_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: 547f625e3c0323747807ced9bae25c77, type: 2}
+  - {fileID: 11400000, guid: c422170bcda060f4fa19c539f2630e7f, type: 2}
   scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: e17675fb7c897674b99710ed5fc2aa84, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: ec93cb02a90b8f9419902bf645ac4310, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
     requiresBlendModeMaterials: 0
