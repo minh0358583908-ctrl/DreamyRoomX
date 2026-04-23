@@ -1,0 +1,17 @@
+dr.Dog.png
+size:732,276
+filter:Linear,Linear
+d_arm
+bounds:536,131,109,143
+d_body
+bounds:2,2,272,532
+rotate:90
+d_leg
+bounds:647,84,60,96
+d_tail
+bounds:647,182,69,92
+tool1
+bounds:536,35,99,94
+tool2
+bounds:637,31,51,93
+rotate:90

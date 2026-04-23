@@ -1,0 +1,6 @@
+pillow_1.png
+size:220,220
+filter:Linear,Linear
+pma:true
+pillow_1
+bounds:2,2,205,215

@@ -1,0 +1,6 @@
+rem.png
+size:1244,1244
+filter:Linear,Linear
+pma:true
+17_curtain
+bounds:2,2,853,1239

@@ -1,0 +1,6 @@
+pillow_xanh.png
+size:192,192
+filter:Linear,Linear
+pma:true
+pillow_1
+bounds:2,6,185,181

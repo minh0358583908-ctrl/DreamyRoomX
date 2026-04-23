@@ -19,7 +19,7 @@ public class GameplayController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayLevel(0);
+        PlayLevel(1);
     }
 
     private void PlayLevel(int level)
@@ -27,5 +27,9 @@ public class GameplayController : MonoBehaviour
         if (curLevel != null) Destroy(curLevel.gameObject);
         curLevel = Instantiate(listLevel[level],transform);
         curLevel.Init();
+        curLevel.transform.position = Vector3.zero;
+
+        boxAnim.gameObject.SetActive(true);
+
     }
 }

@@ -1,0 +1,77 @@
+tho.png
+size:1608,332
+filter:Linear,Linear
+scale:2.0
+bc1_long may 1
+bounds:268,24,70,38
+bc1_long may 2
+bounds:1446,6,36,54
+bc1_mat 1
+bounds:430,8,72,54
+bc1_mat 2
+bounds:552,12,44,54
+bc1_mieng
+bounds:340,24,48,38
+bc2_long may1
+bounds:1278,2,48,26
+bc2_long may2
+bounds:1484,8,52,40
+rotate:90
+bc2_mat1
+bounds:1526,8,46,46
+bc2_mat2
+bounds:504,4,62,46
+rotate:90
+bc2_mieng
+bounds:1526,100,72,44
+bep
+bounds:682,2,76,86
+bong
+bounds:476,68,262,106
+rotate:90
+cai vot
+bounds:1402,146,204,184
+cai vot copy
+bounds:1214,126,204,186
+rotate:90
+cang tay
+bounds:976,14,100,106
+con ruoi1
+bounds:1526,56,42,50
+rotate:90
+con ruoi2
+bounds:390,24,38,38
+dg bay
+bounds:2,10,416,12
+duoi
+bounds:1078,2,124,120
+haha
+bounds:1278,30,84,94
+mat
+bounds:2,24,306,264
+rotate:90
+ong tay ao 1
+bounds:760,4,102,84
+ong tay ao 2
+bounds:1204,26,72,96
+ong tay ao sau
+bounds:1364,36,80,88
+tai1
+bounds:1070,124,142,206
+tai2
+bounds:938,122,130,208
+tapde
+bounds:584,90,226,240
+tay cam vot
+bounds:1446,62,76,82
+tay dap
+bounds:812,112,218,124
+rotate:90
+tay sau
+bounds:864,2,108,110
+rotate:90
+than
+bounds:268,64,206,266
+tuc gian icon
+bounds:598,2,86,82
+rotate:90

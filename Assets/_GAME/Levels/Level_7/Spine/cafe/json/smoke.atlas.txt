@@ -1,0 +1,44 @@
+smoke.png
+size:1424,116
+filter:Linear,Linear
+pma:true
+khoi/Comp 1_00000
+bounds:2,2,69,110
+khoi/Comp 1_00002
+bounds:73,2,69,110
+khoi/Comp 1_00004
+bounds:144,2,69,110
+khoi/Comp 1_00006
+bounds:215,2,69,110
+khoi/Comp 1_00008
+bounds:286,2,69,110
+khoi/Comp 1_00010
+bounds:357,2,69,110
+khoi/Comp 1_00012
+bounds:428,2,69,110
+khoi/Comp 1_00014
+bounds:499,2,69,110
+khoi/Comp 1_00016
+bounds:570,2,69,110
+khoi/Comp 1_00018
+bounds:641,2,69,110
+khoi/Comp 1_00020
+bounds:712,2,69,110
+khoi/Comp 1_00022
+bounds:783,2,69,110
+khoi/Comp 1_00024
+bounds:854,2,69,110
+khoi/Comp 1_00026
+bounds:925,2,69,110
+khoi/Comp 1_00028
+bounds:996,2,69,110
+khoi/Comp 1_00030
+bounds:1067,2,69,110
+khoi/Comp 1_00032
+bounds:1138,2,69,110
+khoi/Comp 1_00034
+bounds:1209,2,69,110
+khoi/Comp 1_00036
+bounds:1280,2,69,110
+khoi/Comp 1_00038
+bounds:1351,2,69,110

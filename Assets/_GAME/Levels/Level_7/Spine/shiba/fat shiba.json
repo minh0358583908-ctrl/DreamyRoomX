@@ -1,0 +1,52 @@
+{ "skeleton": { "images": "D:/Job_Dung_Art/Lv_01/shiba/images/" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "leg_B", "bone": "root", "attachment": "leg_B" },
+	{ "name": "tail", "bone": "root", "attachment": "tail" },
+	{ "name": "body", "bone": "root", "attachment": "body" },
+	{ "name": "head", "bone": "root", "attachment": "head" },
+	{ "name": "arm_F", "bone": "root", "attachment": "arm_F" },
+	{ "name": "arm_B", "bone": "root", "attachment": "arm_B" },
+	{ "name": "leg_F", "bone": "root", "attachment": "leg_F" },
+	{ "name": "face", "bone": "root", "attachment": "face" },
+	{ "name": "Layer 921", "bone": "root", "attachment": "Layer 921" }
+],
+"skins": {
+	"default": {
+		"shadow": {
+			"shadow": { "x": 165, "y": -396.5, "width": 214, "height": 157 }
+		},
+		"leg_B": {
+			"leg_B": { "x": 216, "y": -367.5, "width": 90, "height": 109 }
+		},
+		"tail": {
+			"tail": { "x": 39, "y": -291, "width": 80, "height": 96 }
+		},
+		"body": {
+			"body": { "x": 154.5, "y": -296, "width": 221, "height": 208 }
+		},
+		"head": {
+			"head": { "x": 159, "y": -125.5, "width": 250, "height": 253 }
+		},
+		"arm_F": {
+			"arm_F": { "x": 127, "y": -279, "width": 104, "height": 86 }
+		},
+		"arm_B": {
+			"arm_B": { "x": 256.5, "y": -279, "width": 53, "height": 104 }
+		},
+		"leg_F": {
+			"leg_F": { "x": 100, "y": -371.5, "width": 90, "height": 109 }
+		},
+		"face": {
+			"face": { "x": 170, "y": -164, "width": 194, "height": 104 }
+		},
+		"Layer 921": {
+			"Layer 921": { "x": 220.5, "y": -84, "width": 61, "height": 60 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

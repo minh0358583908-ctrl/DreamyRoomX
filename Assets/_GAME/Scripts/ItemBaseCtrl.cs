@@ -1,4 +1,4 @@
-using DG.Tweening;
+﻿using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,7 +24,7 @@ namespace _GAME.Scripts
             }
             transform.DORotateQuaternion(Quaternion.Euler(0, 0, 0),0.1f);
         }
-        public void PlayAninationActive()
+        public void PlayAnimationActive()
         {
             ClearAnimation();
             var moveHeight = 0.3f;
@@ -77,13 +77,13 @@ namespace _GAME.Scripts
             else
             {
                 sprt.sortingOrder = 1;
-                ClearAnimation();
+               PlayAnimationActive();
             } 
             
         }
         public void CheckCanSuccess()
         {
-            if (parent != null && parent.IsSuccess())
+            if (parent != null && !parent.IsSuccess()) 
             {
                 Debug.Log("da dung vi tri chua!");
                 return;
@@ -95,6 +95,7 @@ namespace _GAME.Scripts
                 transform.DOMove(successPos, 0.25f);
                 isSuccess = true;
                 sprt.sortingOrder = 0;
+                ClearAnimation(); // thiếu clear anim khi success thì nó vẫn sẽ chạy lơ lửng
 
                 Debug.Log("Item is success!");
             }

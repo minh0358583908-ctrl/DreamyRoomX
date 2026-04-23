@@ -1,0 +1,31 @@
+meo-duc.png
+	size: 232, 96
+	filter: Linear, Linear
+	pma: true
+	scale: 0.8
+chan1
+	bounds: 181, 62, 32, 42
+	rotate: 90
+chan2
+	bounds: 190, 32, 28, 38
+	rotate: 90
+chan3
+	bounds: 190, 2, 36, 28
+	offsets: 1, 0, 37, 28
+dau
+	bounds: 2, 12, 82, 94
+	rotate: 90
+duoi
+	bounds: 145, 35, 34, 59
+hoa
+	bounds: 145, 2, 43, 31
+	offsets: 1, 0, 44, 31
+mat
+	bounds: 98, 6, 18, 20
+mat2
+	bounds: 2, 3, 7, 9
+	rotate: 90
+than
+	bounds: 98, 28, 66, 45
+	offsets: 0, 0, 67, 45
+	rotate: 90
