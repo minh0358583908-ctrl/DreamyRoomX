@@ -8,7 +8,8 @@ public class LevelDataController : MonoBehaviour
 {
     public List<ItemBaseCtrl> listItem;
     private int _itemSpawnCounter = 0;
-
+    public List<GameObject> allItems; 
+    private int currentItemIndex = 0;
     public void Init()
     {
         _itemSpawnCounter = 0;
@@ -68,8 +69,8 @@ public class LevelDataController : MonoBehaviour
            
             AutoReferenceChild(child);
           
-            var oldPos = child.transform.localPosition;
-            child.transform.localPosition = new Vector3(oldPos.x, oldPos.y, child.index * -0.001f);
+            //var oldPos = child.transform.localPosition;
+            //child.transform.localPosition = new Vector3(oldPos.x, oldPos.y, child.index * -0.001f);
         }
     }
 
@@ -88,8 +89,8 @@ public class LevelDataController : MonoBehaviour
            
             AutoReferenceChild(child);
            
-            var oldPos = child.transform.localPosition;
-            child.transform.localPosition = new Vector3(oldPos.x, oldPos.y, child.index * -0.001f);
+            //var oldPos = child.transform.localPosition;
+            //child.transform.localPosition = new Vector3(oldPos.x, oldPos.y, child.index * -0.001f);
         }
     }
 
@@ -126,6 +127,25 @@ public class LevelDataController : MonoBehaviour
             item.sprt.sortingOrder = 1;
             item.successPos = item.transform.position;
             item.isSuccess = false;
+        }
+    }
+
+
+    public void SpawnNextItem()
+    {
+        if (currentItemIndex < allItems.Count)
+        {
+            
+            allItems[currentItemIndex].SetActive(true);
+
+          
+            // allItems[currentItemIndex].transform.position = boxPosition.position;
+
+            currentItemIndex++;
+        }
+        else
+        {
+            Debug.Log("da het do!");
         }
     }
 

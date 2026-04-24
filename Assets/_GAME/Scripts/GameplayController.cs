@@ -1,4 +1,5 @@
-using Spine.Unity;
+﻿using Spine.Unity;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,10 +20,10 @@ public class GameplayController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayLevel(1);
+        //PlayLevel(1);
     }
 
-    private void PlayLevel(int level)
+    public void PlayLevel(int level)
     {
         if (curLevel != null) Destroy(curLevel.gameObject);
         curLevel = Instantiate(listLevel[level],transform);
@@ -32,4 +33,26 @@ public class GameplayController : MonoBehaviour
         boxAnim.gameObject.SetActive(true);
 
     }
+    public void StartLevel(int index)
+    {
+        
+
+        GameObject newLevel = Instantiate(listLevel[index].gameObject);
+
+       
+        newLevel.transform.position = Vector3.zero;
+
+        curLevel = newLevel.GetComponent<LevelDataController>();
+    }
+    public void OnClickBox()
+    {
+       
+        if (curLevel != null)
+        {
+
+            curLevel.SpawnNextItem();
+        }
+    }
+
+
 }
