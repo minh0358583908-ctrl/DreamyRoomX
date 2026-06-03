@@ -21,6 +21,7 @@ public class GameplayController : MonoBehaviour
     void Start()
     {
         //PlayLevel(1);
+        CleanLevel();
     }
 
     public void PlayLevel(int level)
@@ -31,7 +32,12 @@ public class GameplayController : MonoBehaviour
         curLevel.transform.position = Vector3.zero;
 
         boxAnim.gameObject.SetActive(true);
-
+        AudioController.Ins.PlayGameplayMusic();
+    }
+    public void CleanLevel()
+    {
+        if (curLevel != null) Destroy(curLevel.gameObject);
+        boxAnim.gameObject.SetActive(true);
     }
     public void StartLevel(int index)
     {

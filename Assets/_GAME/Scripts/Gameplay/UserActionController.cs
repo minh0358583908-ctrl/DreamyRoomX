@@ -42,6 +42,19 @@ public class UserActionController : MonoBehaviour
         }
         
     }
+    public void PickItem()
+    {
+        VibrationController.Instance.Vibrate();
+
+        Debug.Log("Pick Item");
+    }
+    public void PutItem()
+    {
+        VibrationController.Instance.Vibrate();
+
+        Debug.Log("Put Item");
+    }
+  
 
     private void CheckSpawnItem()
     {

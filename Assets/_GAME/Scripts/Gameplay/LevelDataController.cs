@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using _GAME.Scripts;
+using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using _GAME.Scripts;
-using DG.Tweening;
+using static AudioController;
 
 public class LevelDataController : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class LevelDataController : MonoBehaviour
     public bool SpawnItem()
     {
         if (_itemSpawnCounter >= listItem.Count) return false;
+        AudioController.Ins.PlaySound(AudioId.SpawnItem);
         var nextItem = listItem[_itemSpawnCounter];
         nextItem.transform.SetParent(transform);
         nextItem.gameObject.SetActive(true);

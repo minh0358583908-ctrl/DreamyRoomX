@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static AudioController;
 namespace _GAME.Scripts
 {
     public class ItemBaseCtrl : MonoBehaviour
@@ -14,6 +15,8 @@ namespace _GAME.Scripts
         public List<ItemBaseCtrl> sameItems;
         public List<Tweener> _animActive = new();
         private Vector3 tempPos;
+
+    
 
         private void ClearAnimation()
         {
@@ -71,6 +74,7 @@ namespace _GAME.Scripts
         {
             if (selected)
             {
+                AudioController.Ins.PlaySound(AudioId.PickItem);
                 sprt.sortingOrder = 2;
                 ClearAnimation();
             }
@@ -91,11 +95,12 @@ namespace _GAME.Scripts
 
             if (Vector3.Distance(transform.position, successPos) < 0.5f)
             {
+                AudioController.Ins.PlaySound(AudioId.PutItem);
                 //transform.position = successPos;
                 transform.DOMove(successPos, 0.25f);
                 isSuccess = true;
                 sprt.sortingOrder = 0;
-                ClearAnimation(); // thiếu clear anim khi success thì nó vẫn sẽ chạy lơ lửng
+                ClearAnimation(); 
 
                 Debug.Log("Item is success!");
             }
